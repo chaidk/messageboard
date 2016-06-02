@@ -1,9 +1,9 @@
-article{
+/*article{
 	padding:10px 10px;
-}
+}*/
 /*note*/
-.note {
-	display: none;
+div.note {
+	/*display: none;*/
 	width: 440px;
 	height: 330px;
 	position: absolute;
@@ -26,6 +26,7 @@ article{
 	padding:50px 20px 20px 70px;
 }
 #close {
+	cursor: pointer;
 	width: 25px;
 	position: absolute;
 	right:30px;
@@ -137,6 +138,7 @@ background: black;
 
 /*message*/
 .message {
+	display: none;
 margin:0 auto;/*
 padding: 0px 15px 25px 10px;*/
 max-width: 500px;
