@@ -1,9 +1,9 @@
+article{
+	padding:10px 10px;
+}
 /*note*/
-/*body {
-margin-left:auto;
-margin-right:auto;
-}*/
 .note {
+	display: none;
 	width: 440px;
 	height: 330px;
 	position: absolute;
@@ -31,7 +31,6 @@ margin-right:auto;
 	right:30px;
 	top:30px;
 }
-
 
 /*form*/
 .form {
@@ -114,6 +113,7 @@ border-radius: 3px;
 text-shadow: 1px 1px 1px #9E3F3F;
 cursor: pointer;
 transition: background 0.3s;
+    -webkit-appearance : none ; 
 }
 /*.form .buttonPub:hover {
 background: black;
@@ -129,6 +129,7 @@ border-radius: 3px;
 text-shadow: 1px 1px 1px #383838;
 cursor: pointer;
 transition: background 0.3s;
+    -webkit-appearance : none ; 
 }
 /*.form .buttonPri:hover {
 background: black;
