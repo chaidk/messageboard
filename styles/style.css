@@ -3,7 +3,7 @@
 }*/
 /*note*/
 div.note {
-	/*display: none;*/
+	display: none;
 	width: 440px;
 	height: 330px;
 	position: absolute;
@@ -138,7 +138,7 @@ background: black;
 
 /*message*/
 .message {
-	display: none;
+	/*display: none;*/
 margin:0 auto;/*
 padding: 0px 15px 25px 10px;*/
 max-width: 500px;
@@ -150,6 +150,7 @@ text-shadow: 1px 1px 1px #FFF;
 /*border:1px solid #E4E4E4;*/
 }
 .text {
+	/*display: none;*/
 	padding:0px 20px;
 	margin:10px 0;	
 	height:100px;
@@ -158,6 +159,9 @@ text-shadow: 1px 1px 1px #FFF;
 	color: #888888;
 	box-shadow: 1px 1px 5px #B6B6B6;
 	border-radius: 3px;
+	position: relative;
+	top:0px;
+	transition: top 0.3s;
 }
 .text h2 {
 	margin:1px 0px;
