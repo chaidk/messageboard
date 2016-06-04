@@ -21,7 +21,7 @@
 			</p>
 		</div>
 		<div class="form">
-			<form action="service.php" method="post" class="form">
+			<form action="index.php" method="get" class="form">
 			<h1>MessageBoard
 			<span>Tell me anything you want to say.</span>
 			</h1>
@@ -35,9 +35,23 @@
 			<textarea id="message" name="message" placeholder=" Your message to me"></textarea>
 			</label>
 			<label>
+<!-- 			<label>
+			<span>是否公开 :</span>
+
+			<input type="radio" id="private" name="private" value="1">
+			</label> -->
 			<span>&nbsp;</span>
-			<input type="button" class="buttonPub" value="公开发送" />
-			<input type="button" class="buttonPri" value="悄悄发送" />
+			<label for="private0" class="buttonPub">公开发送</label>	
+			<input type="radio" id="private0" name="private" value="0" checked class="1">
+			<label for="private1" class="buttonPri">悄悄发送</label>	
+			<input type="radio" id="private1" name="private" value="1">			
+<!-- 			<input type="button" class="buttonPub" value="公开发送" />
+			<input type="button" class="buttonPri" value="悄悄发送" /> -->
+			<!-- <button name="private" class="buttonPub" value="0" >0</button> -->
+			<!-- <input id="private" name="private" type="submit" class="buttonPub" value="0" > -->
+			<!-- <input type="submit" class="buttonPri" value="submit" > -->
+			<input type="image" src="images/submit.png" id="submit" alt="">
+			<input type="hidden" name="action" value="submit" id="action">
 			</label>
 			</form>
 		</div>

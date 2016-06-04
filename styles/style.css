@@ -103,7 +103,19 @@ line-height: 25px;
 .form textarea{
 height:100px;
 }
+/*#private0,#private1 {
+	display: none;
+}*/
+.form #submit {
+	position: absolute;
+	width: 35px;
+	margin-left: 40px;
+box-shadow: 1px 1px 5px #B6B6B6;
+cursor: pointer;
+}
 .form .buttonPub {
+	display: inline-block;
+	width: 50px;
 font-family: "Microsoft YaHei light";
 background: #E27575;
 border: none;
@@ -120,6 +132,8 @@ transition: background 0.3s;
 background: black;
 }*/
 .form .buttonPri {
+	display: inline-block;
+	width: 50px;
 font-family: "Microsoft YaHei light";
 background: gray;
 border: none;
@@ -138,7 +152,7 @@ background: black;
 
 /*message*/
 .message {
-	/*display: none;*/
+display: none;
 margin:0 auto;/*
 padding: 0px 15px 25px 10px;*/
 max-width: 500px;
@@ -161,7 +175,7 @@ text-shadow: 1px 1px 1px #FFF;
 	border-radius: 3px;
 	position: relative;
 	top:0px;
-	transition: top 0.3s;
+	transition: top 0.5s;
 }
 .text h2 {
 	margin:1px 0px;
