@@ -2,6 +2,7 @@
 
 // time
 	// echo date("m/d/y h:m:s");
+	// 
 // post
 if($_GET){	
 	if ($_GET['action'] == 'submit') {
@@ -27,7 +28,7 @@ if($_GET){
 		$result = db_connection($query);
 		
 		if ($result) {
-			$msg = "name: ".$name." added successfully" ;
+			$msg = "评论成功！" ;
 			success($msg);
 		} else {
 			fail('Insert failed.');

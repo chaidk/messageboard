@@ -71,15 +71,14 @@ $pri.click(function(){
 
 var $select=$("input[type=radio][checked]").val();
 $sub.click(function(){
-	alert($p0.attr("class"));
 	$message.fadeIn(500);
 	var $data = $(".form :input").serializeArray();
 	$.get("index.php",$data,function(json){
 			if (json.status == "fail") {
-				// alert(json.message);
+				alert(json.message);
 			}
 			if (json.status == "success") {
-				// alert(json.message);
+				alert(json.message);
 				clearInputs();
 			if ($p0.attr("class")=="1"){
 			$("div.text").css({top:'+=100px'});	

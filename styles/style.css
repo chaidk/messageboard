@@ -1,6 +1,6 @@
-/*article{
+article{
 	padding:10px 10px;
-}*/
+}
 /*note*/
 div.note {
 	display: none;
@@ -34,6 +34,7 @@ div.note {
 }
 
 /*form*/
+input,input:focus,input:active{user-select: text;}
 .form {
 margin-left:auto;
 margin-right:auto;
@@ -88,18 +89,7 @@ box-shadow: inset 0px 1px 4px #ECECEC;
 .form textarea{
 padding: 5px 3px 3px 5px;
 }
-/*.form select {
-background: #FFF url('down-arrow.png') no-repeat right;
-background: #FFF url('down-arrow.png') no-repeat right);
-appearance:none;
--webkit-appearance:none;
--moz-appearance: none;
-text-indent: 0.01px;
-text-overflow: '';
-width: 70%;
-height: 35px;
-line-height: 25px;
-}*/
+
 .form textarea{
 height:100px;
 }
@@ -128,9 +118,7 @@ cursor: pointer;
 transition: background 0.3s;
     -webkit-appearance : none ; 
 }
-/*.form .buttonPub:hover {
-background: black;
-}*/
+
 .form .buttonPri {
 	display: inline-block;
 	width: 50px;
@@ -146,22 +134,16 @@ cursor: pointer;
 transition: background 0.3s;
     -webkit-appearance : none ; 
 }
-/*.form .buttonPri:hover {
-background: black;
-}*/
 
 /*message*/
 .message {
 display: none;
-margin:0 auto;/*
-padding: 0px 15px 25px 10px;*/
+margin:0 auto;
 max-width: 500px;
 background: #F7F7F7;
-/*padding: 25px 15px 25px 10px;*/
 font: 12px "Microsoft YaHei light",Georgia, "Times New Roman", Times, serif;
 color: #888;
 text-shadow: 1px 1px 1px #FFF;
-/*border:1px solid #E4E4E4;*/
 }
 .text {
 	/*display: none;*/
