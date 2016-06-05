@@ -34,6 +34,10 @@ var $p0=$("#private0");
 // var $p1=$("#private1");
 $pub.click(function(){
 	$p0.attr("class","1");
+	// $pub.css('background-color','#e43d3d');
+	// $pri.css('background-color','gray');
+	$pub.css('background-color','#E27575');
+	$pri.css('background-color','gray');
 // 	$message.fadeIn(500);
 // 	var $data = $(".form :input").serializeArray();
 // 	$.get("index.php",$data,function(json){
@@ -51,6 +55,10 @@ $pub.click(function(){
 });
 $pri.click(function(){
 	$p0.attr("class","0");
+	// $pub.css('background-color','#E27575');
+	// $pri.css('background-color','#3e3e3e');
+	$pub.css('background-color','gray');
+	$pri.css('background-color','#E27575');
 // 	$message.fadeIn(500);
 // 	var $data = $(".form :input").serializeArray();
 // 	$.get("index.php",$data,function(json){
@@ -98,6 +106,8 @@ $sub.click(function(){
 function clearInputs(){
 	$("#name").val('');
 	$("#message").val('');
+	$pub.css('background-color','#E27575');
+	$pri.css('background-color','gray');
 }
 
 

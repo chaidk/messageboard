@@ -1,7 +1,7 @@
 <?php
 
 // time
-	// echo date("m/d/y h:m:s");
+	// echo date("m/d/y H:i:s");
 //ip 
 	// echo $_SERVER["REMOTE_ADDR"];
 
@@ -12,7 +12,7 @@ if($_GET){
 		$name = htmlspecialchars($_GET['name']);
 		$message = htmlspecialchars($_GET['message']);
 		$private = htmlspecialchars($_GET['private']);
-		$date = date("m/d/y H:m:s");
+		$date = date("m/d/y H:i:s");
 		$ip = $_SERVER["REMOTE_ADDR"];
 		// if(preg_match('/[^\w\s]/i', $name)) {
 		// 	fail('Invalid name provided.');
@@ -47,7 +47,7 @@ if($_GET){
 	// print_r ($row);
 	array_push($message,array('name'=>$row['name'],'message'=>$row['message'],'private'=>$row['private'],'date'=>$row['date'],'ip'=>$row['ip']));
 	}
-	echo json_encode(array("message"=>$message));
+	// echo json_encode(array("message"=>$message));
 	function db_connection($query){
 	mysql_connect('127.0.0.1','root','qwqw1212')OR die('Could not connect to database.');
 	mysql_select_db('message_board');
