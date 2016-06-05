@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=720,inital-scale=1.0,user-scalable=no;">
+	<meta name="viewport" content="width=720,inital-scale=1.0,user-scalable=no">
 	<title>DK|MessageBoard</title>
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="icon" href="images/icon s.ico" type="image/x-icon" />  
@@ -19,7 +19,7 @@
 			也可以悄悄告诉我<br>
 			选择悄悄发送不会公开你的评论<br>
 			<br>
-			那么快开始吧<br>
+			~~~~~~~~~~~~~<br>
 			只有发布后才能看到其他人的留言哟<br>
 			</p>
 		</div>
@@ -30,12 +30,12 @@
 			</h1>
 			<label>
 			<span>Name :</span>
-			<input id="name" type="text" name="name" placeholder=" Whatever" />
+			<input id="name" type="text" name="name" maxlength="25" placeholder=" Your name" />
 			</label>
 			</label>
 			<label>
 			<span>Message :</span>
-			<textarea id="message" name="message" placeholder=" Your message to me"></textarea>
+			<textarea id="message" name="message" maxlength="200" placeholder=" Your message to me"></textarea>
 			</label>
 			<label>
 			<span>&nbsp;</span>
@@ -49,7 +49,10 @@
 			</form>
 		</div>
 		<div class="message">
-
+<!-- 			<div class="text">
+			<h2>测试</h2><span>2016-06-4 10:10:10</span>
+			<p></p>
+			</div> -->
 			</div>
 	</article>
 	<script src="scripts/jquery-1.12.3.js" type="text/javascript"></script>

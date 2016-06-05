@@ -18,7 +18,7 @@ function getMessage(){
 			$("div.message").empty();
 			$.each(json.message,function(){
 				if(this['private']=='0'){
-					$message.prepend("<div class='text'>"+'<h2>'+this['name']+'</h2>'+'<p>'+this['message']+'</p>'+'</div>');
+					$message.prepend("<div class='text'>"+'<h2>'+this['name']+'&nbsp'+'</h2>'+'<span>'+this['date']+'</span>'+'&nbsp'+'<span>'+this['ip']+'</span>'+'<p>'+this['message']+'</p>'+'</div>');
 				}
 			
 			});
@@ -31,7 +31,7 @@ var $pub=$(".buttonPub");
 var $pri=$(".buttonPri");
 var $sub=$("#submit");
 var $p0=$("#private0");
-var $p1=$("#private1");
+// var $p1=$("#private1");
 $pub.click(function(){
 	$p0.attr("class","1");
 // 	$message.fadeIn(500);
@@ -69,15 +69,21 @@ $pri.click(function(){
 // 	return false;
 });
 
-var $select=$("input[type=radio][checked]").val();
+
+
 $sub.click(function(){
-	$message.fadeIn(500);
+	var numError = $('form .onError').length;
+	if(numError){
+		return false;
+	}
 	var $data = $(".form :input").serializeArray();
 	$.get("index.php",$data,function(json){
 			if (json.status == "fail") {
 				alert(json.message);
+				return false;
 			}
 			if (json.status == "success") {
+				$message.fadeIn(500);
 				alert(json.message);
 				clearInputs();
 			if ($p0.attr("class")=="1"){
@@ -93,8 +99,6 @@ function clearInputs(){
 	$("#name").val('');
 	$("#message").val('');
 }
-
-// validate
 
 
 
