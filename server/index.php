@@ -1,7 +1,6 @@
 <?php
 
 
-
 // db
 	$query = "select name,message,private,date,ip from message";
 	$result = db_connection($query);
@@ -16,11 +15,11 @@
 	mysql_select_db('message_board');
 	return mysql_query($query);
 	}
-		function fail($message) {
-		die(json_encode(array('status' => 'fail', 'message' => $message)));
-	}
-	function success($message) {
-		die(json_encode(array('status' => 'success', 'message' => $message)));
-	}
 
+
+
+// $count = fopen("count.txt", "r");
+// $txt = fread($count,filesize("count.txt"));
+// echo $txt;
+// fclose($count);
 ?>

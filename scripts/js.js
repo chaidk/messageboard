@@ -16,12 +16,19 @@ function getMessage(){
 	$.getJSON("index.php",function(json){
 		if(json.message.length > 0){
 			$("div.message").empty();
+			var $countPub=0,$countPri=0;
 			$.each(json.message,function(){
 				if(this['private']=='0'){
 					$message.prepend("<div class='text'>"+'<h2>'+this['name']+'&nbsp'+'</h2>'+'<span>'+this['date']+'</span>'+'&nbsp'+'<span>'+this['ip']+'</span>'+'<p>'+this['message']+'</p>'+'</div>');
+					$countPub++;
+				}
+				if(this['private']=='1'){
+					$countPri++;
 				}
 			
 			});
+			$pub.text('公开发送('+$countPub+')');
+			$pri.text('悄悄发送('+$countPri+')');
 		}
 	})
 }

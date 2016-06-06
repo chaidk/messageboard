@@ -94,14 +94,9 @@ box-shadow: inset 0px 1px 4px #ECECEC;
 }
 .form textarea{
 padding: 5px 3px 3px 5px;
-}
-
-.form textarea{
 height:100px;
 }
-/*#private0,#private1 {
-	display: none;
-}*/
+
 .form #submit {
 	position: absolute;
 	width: 35px;
@@ -112,11 +107,11 @@ height:100px;
 }
 .form .buttonPub {
 	display: inline-block;
-	width: 50px;
+	width: 67px;
 font-family: "Microsoft YaHei light";
 background: #E27575;
 border: none;
-padding: 10px 25px 10px 25px;
+padding: 10px 20px 10px 20px;
 color: #FFF;
 box-shadow: 1px 1px 5px #B6B6B6;
 border-radius: 3px;
@@ -127,11 +122,11 @@ transition: background 0.3s;
 }
 .form .buttonPri {
 	display: inline-block;
-	width: 50px;
+	width: 67px;
 font-family: "Microsoft YaHei light";
 background: gray;
 border: none;
-padding: 10px 25px 10px 25px;
+padding: 10px 20px 10px 20px;
 color: #FFF;
 box-shadow: 1px 1px 5px #B6B6B6;
 border-radius: 3px;
